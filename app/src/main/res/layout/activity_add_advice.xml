@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ActivityAddAdvice"
+    android:background="@color/white"
+    android:padding="20dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivBackArrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_arrow"/>
+
+        <TextView
+            style="@style/tvHeading"
+            android:text="Add Advice" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/parent2"
+        android:paddingTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/parent">
+
+        <EditText
+            android:id="@+id/edtTitle"
+            style="@style/edtText3"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Enter Title"/>
+        <EditText
+            android:id="@+id/edtDetail"
+            style="@style/edtText3"
+            android:layout_height="150dp"
+            android:layout_below="@id/edtTitle"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="start"
+            android:padding="10dp"
+            android:hint="Enter Details "/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSave"
+            style="@style/Button"
+            android:layout_below="@id/edtDetail"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Save" />
+    </RelativeLayout>
+</RelativeLayout>

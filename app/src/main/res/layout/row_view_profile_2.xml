@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="80dp"
+android:layout_height="70dp"
+android:background="@drawable/bg_spinner">
+<TextView
+    android:id="@+id/tvEdit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Edit"
+    android:textColor="@color/black"
+    android:fontFamily="@font/roboto"
+    android:textSize="10sp"
+    android:layout_margin="10dp"
+    android:drawablePadding="20dp"
+   android:drawableEnd="@drawable/ic_edit2" />
+
+<TextView
+    android:id="@+id/tvDelete"
+    android:layout_below="@id/tvEdit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Delete"
+    android:textColor="@color/black"
+    android:fontFamily="@font/roboto"
+    android:textSize="10sp"
+    android:layout_margin="10dp"
+    android:drawablePadding="10dp"
+    android:drawableEnd="@drawable/delete"/>
+</RelativeLayout>

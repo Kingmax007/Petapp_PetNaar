@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Pet Adoption Day"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="August 8, 2024 At 2.00 Pm"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/parent2"
+        android:layout_below="@id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_home">
+        <ImageView
+            android:id="@+id/ivimage"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:src="@drawable/iv_row_5"
+            android:layout_alignParentEnd="true"
+            android:scaleType="fitXY"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/postdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/ivimage"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Posted on : August 2, 2024"
+            android:textSize="8sp" />
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Murree Road, Islamabad, Pakistan"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tvText2"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAddress"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+            android:textColor="@color/grey"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

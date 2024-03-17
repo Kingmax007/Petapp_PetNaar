@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ActivityAdvice" android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivBackArrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_arrow"/>
+
+        <TextView
+            style="@style/tvHeading"
+            android:text="Advice" />
+        <ImageView
+            android:id="@+id/ivAdd"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_add" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <RelativeLayout
+                    android:id="@+id/parent2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_home">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/blue"
+                        android:layout_centerHorizontal="true"
+                        android:text=" Grooming Basics"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/tvDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvName"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/blue"
+                        android:layout_margin="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="Learn essential grooming techniques to keep your pet clean and healthy, including brushing, bathing, and nail trimming"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <RelativeLayout
+                    android:id="@+id/parent3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_home">
+
+                    <TextView
+                        android:id="@+id/tvName3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/blue"
+                        android:layout_centerHorizontal="true"
+                        android:text=" Grooming Basics"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/tvDetail3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvName3"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/blue"
+                        android:layout_margin="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="Learn essential grooming techniques to keep your pet clean and healthy, including brushing, bathing, and nail trimming"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <RelativeLayout
+                    android:id="@+id/parent4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_home">
+
+                    <TextView
+                        android:id="@+id/tvName4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/blue"
+                        android:layout_centerHorizontal="true"
+                        android:text=" Grooming Basics"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvDetail4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvName4"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Learn essential grooming techniques to keep your pet clean and healthy, including brushing, bathing, and nail trimming"
+                        android:textColor="@color/blue"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <RelativeLayout
+                    android:id="@+id/parent5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_home">
+
+                    <TextView
+                        android:id="@+id/tvName5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/blue"
+                        android:layout_centerHorizontal="true"
+                        android:text=" Grooming Basics"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/tvDetail5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvName5"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/blue"
+                        android:layout_margin="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="Learn essential grooming techniques to keep your pet clean and healthy, including brushing, bathing, and nail trimming"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <RelativeLayout
+                    android:id="@+id/parent6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_home">
+
+                    <TextView
+                        android:id="@+id/tvName6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/blue"
+                        android:layout_centerHorizontal="true"
+                        android:text=" Grooming Basics"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/tvDetail6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvName6"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/blue"
+                        android:layout_margin="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="Learn essential grooming techniques to keep your pet clean and healthy, including brushing, bathing, and nail trimming"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="16sp"
+        android:textColor="@color/blue"
+        android:text=" What is the purpose of the pet app?"/>
+    <ImageView
+        android:id="@+id/dropDown"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/arrow_drop_down"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"/>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/grey"
+    android:id="@+id/view"
+    android:layout_below="@id/question"
+    android:layout_marginTop="20dp"/>
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ActivityAddClinic"
+    android:background="@color/white"
+    android:padding="20dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivBackArrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_arrow"/>
+
+        <TextView
+            style="@style/tvHeading"
+            android:text="Add Clinic" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/parent2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/parent">
+
+        <RelativeLayout
+            android:id="@+id/parentRelative"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/bg_spinner"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/ivCamera"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_photo_camera" />
+
+
+
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/edtName"
+            style="@style/edtText3"
+            android:layout_below="@id/parentRelative"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Enter Clinic Name"/>
+
+        <EditText
+            android:id="@+id/edtAddress"
+            style="@style/edtText3"
+            android:layout_below="@id/edtName"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Enter Address"/>
+
+        <EditText
+            android:id="@+id/edtNumber"
+            style="@style/edtText3"
+            android:layout_below="@id/edtAddress"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Enter Contact No "/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSave"
+            style="@style/Button"
+            android:layout_below="@id/edtNumber"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Save" />
+    </RelativeLayout>
+
+</RelativeLayout>

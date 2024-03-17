@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ActivityPetDetails">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/bg_about_us"/>
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+        <ImageView
+            android:id="@+id/ivBackArrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/ic_arrow_left_2"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Labrador "
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="22sp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/parent"
+        android:padding="20dp"
+        android:background="@drawable/bg_about">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Labrador "
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/tvName">
+            <TextView
+                style="@style/detail"
+                android:text="Name:"/>
+            <TextView
+                style="@style/detail"
+                android:text="Age:"/>
+            <TextView
+                style="@style/detail"
+                android:text="Breed:"/>
+            <TextView
+                style="@style/detail"
+                android:text="Interest"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tvName">
+            <TextView
+                android:id="@+id/tvName2"
+                style="@style/detail"
+                android:text="Jack"/>
+            <TextView
+                android:id="@+id/tvAge"
+                style="@style/detail"
+                android:text="2 years Old"/>
+            <TextView
+                android:id="@+id/tvBreed"
+                style="@style/detail"
+                android:text="Labrador "/>
+            <TextView
+                android:id="@+id/tvInterest"
+                style="@style/detail"
+                android:text="Playing"/>
+        </LinearLayout>
+        <TextView
+            android:layout_below="@id/linear"
+            android:id="@+id/tvReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Write your Review"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="12sp"
+            android:textColor="@color/blue"/>
+        <View
+            android:id="@+id/view"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="@color/blue"
+            android:layout_below="@id/tvReview"
+            android:layout_alignParentEnd="true"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp" />
+    </RelativeLayout>
+</RelativeLayout>

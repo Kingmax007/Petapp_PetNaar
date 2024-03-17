@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ActivityFAQs" android:background="@color/white"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivBackArrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_arrow"/>
+
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/girl"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/parent2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/parent">
+        <TextView
+            android:id="@+id/tvfaqs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/blue"
+            android:text="FAQ's"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/parent2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toLeftOf="@id/dropDown"
+                android:fontFamily="@font/poppins_semibold"
+                android:text=" What is the purpose of the pet app?"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/dropDown"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/arrow_drop_down"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@id/question"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:text="The pet app serves as a comprehensive platform designed to assist pet owners in various aspects of pet care, including finding pet-friendly places, accessing expert advice, connecting with the pet community, and organizing pet-related events."/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toLeftOf="@id/dropDown2"
+                android:fontFamily="@font/poppins_semibold"
+                android:text=" What is the purpose of the pet app?"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/dropDown2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/arrow_drop_down"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:id="@+id/view"
+                android:layout_below="@id/question2"
+                android:layout_marginTop="20dp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/question3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@id/dropDown3"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text=" What is the purpose of the pet app?"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/dropDown3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/arrow_drop_down"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:id="@+id/view2"
+                android:layout_below="@id/question3"
+                android:layout_marginTop="20dp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/question4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toLeftOf="@id/dropDown4"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text=" What is the purpose of the pet app?"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/dropDown4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/arrow_drop_down"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:id="@+id/view3"
+                android:layout_below="@id/question4"
+                android:layout_marginTop="20dp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <TextView
+                android:id="@+id/question5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toLeftOf="@id/dropDown5"
+                android:fontFamily="@font/poppins_semibold"
+                android:text=" What is the purpose of the pet app?"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/dropDown5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/arrow_drop_down"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:id="@+id/view4"
+                android:layout_below="@id/question5"
+                android:layout_marginTop="20dp"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

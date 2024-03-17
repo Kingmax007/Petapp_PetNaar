@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "198861871765",
+    "firebase_url": "https://pet-app-e9379-default-rtdb.firebaseio.com",
+    "project_id": "pet-app-e9379",
+    "storage_bucket": "pet-app-e9379.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198861871765:android:aa8814e8202cde8fbd199c",
+        "android_client_info": {
+          "package_name": "com.example.newpetapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB1Y3knoIS-e80L_39h1EoSgUImO5GZUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

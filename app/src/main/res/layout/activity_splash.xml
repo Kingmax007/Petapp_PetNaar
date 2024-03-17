@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ActivitySplash"
+    android:background="@color/blue">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="28sp"
+        android:layout_above="@id/ivImage"
+        android:textColor="@color/white"
+        android:text="Pet Insta"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_pet" />
+
+    <TextView
+        android:id="@+id/tvHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:text="Lorem ipsum site "
+        android:layout_below="@id/ivImage"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvParagraph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHeading"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_light_italic"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor "
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/splash_btn_bg"
+        android:layout_marginBottom="30dp"
+        android:text="Start"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:paddingHorizontal="40dp"
+        android:fontFamily="@font/poppins_semibold"/>
+
+</RelativeLayout>

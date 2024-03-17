@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NewPetApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.ActivityAddAdvice"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivityAddPlaces"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivityAddClinic"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivityEvents"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivityAdvice"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivityPetClinics"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivityPetFriendlyPlaces"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivityAddReview"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivityPetDetails"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivityCommunity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivityFAQs"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivityAboutUs"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivityAddPet"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivityProfile"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivityCreateProfile"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivityMenu"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivityChangeLanguage"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivitySplash"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ActivityLogin"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivityHome"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivityAddEvent"
+            android:exported="true"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

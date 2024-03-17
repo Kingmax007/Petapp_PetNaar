@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ActivityPetFriendlyPlaces"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivBackArrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_arrow"/>
+
+        <TextView
+            style="@style/tvHeading"
+            android:text="Pet Friendly Places" />
+        <ImageView
+            android:id="@+id/ivAdd"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_add" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/parent2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/parent">
+        <EditText
+            android:id="@+id/search"
+            style="@style/search"
+            android:layout_margin="20dp"
+            android:hint="Search here...."
+            android:drawableStart="@drawable/search"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parent2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Lake View Park"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvName"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Murree Road, Islamabad, Pakistan"
+                    android:textSize="12sp" />
+                <ImageView
+                    android:id="@+id/ivimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/iv_row_8"
+                    android:layout_below="@id/address"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="5dp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/tvName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Centaurus Mall"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/address2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvName2"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Jinnah Avenue, F-8, Islamabad, Pakistan"
+                    android:textSize="12sp" />
+                <ImageView
+                    android:id="@+id/ivimage2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/hiary_dog"
+                    android:layout_below="@id/address2"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="5dp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/tvName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Lake View Park"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/address3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvName3"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Murree Road, Islamabad, Pakistan"
+                    android:textSize="12sp" />
+                <ImageView
+                    android:id="@+id/ivimage3"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/iv_row_8"
+                    android:layout_below="@id/address3"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="5dp"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
