@@ -27,15 +27,19 @@
             android:layout_margin="10dp"
             android:layout_alignParentBottom="true"
             android:src="@drawable/ic_pet"/>
+
         <TextView
             android:id="@+id/tvlogo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="Pet Insta"
-            android:layout_margin="10dp"
             android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:layout_toEndOf="@id/ivLogo"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="PetNaar"
             android:textColor="@color/white"
             android:textSize="18sp" />
 
