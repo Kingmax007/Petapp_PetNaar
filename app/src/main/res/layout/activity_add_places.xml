@@ -21,7 +21,7 @@
 
         <TextView
             style="@style/tvHeading"
-            android:text="Add Place" />
+            android:text="@string/add_place" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -36,12 +36,13 @@
             android:layout_height="150dp"
             android:background="@drawable/bg_spinner"
             android:layout_margin="10dp">
+
             <ImageView
                 android:id="@+id/ivCamera"
-                android:layout_width="40dp"
-                android:layout_height="35dp"
-                android:src="@drawable/ic_photo_camera"
-                android:layout_centerInParent="true"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_photo_camera" />
 
 
 
@@ -54,7 +55,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
-            android:hint="Enter Place Name"/>
+            android:hint="@string/enter_place_name"/>
 
         <EditText
             android:id="@+id/edtlocation"
@@ -64,7 +65,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
-            android:hint="Enter Location "/>
+            android:hint="@string/enter_location"/>
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSave"
             style="@style/Button"

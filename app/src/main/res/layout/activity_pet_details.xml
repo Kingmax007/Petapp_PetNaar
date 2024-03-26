@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.ActivityPetDetails">
-    <LinearLayout
+    <ImageView
+        android:id="@+id/ivImage"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:background="@drawable/bg_about_us"/>
+        android:layout_height="250dp"/>
     <RelativeLayout
         android:id="@+id/parent"
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_margin="20dp"
-            android:src="@drawable/ic_arrow_left_2"/>
+            android:src="@drawable/ic_arrow"/>
         <TextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
@@ -44,7 +44,7 @@
             android:id="@+id/tvName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Labrador "
+            android:text="@string/labrador"
             android:fontFamily="@font/poppins_medium"
             android:textSize="20sp"
             android:textColor="@color/black"/>
@@ -58,13 +58,13 @@
                 android:text="Name:"/>
             <TextView
                 style="@style/detail"
-                android:text="Age:"/>
+                android:text="@string/age"/>
             <TextView
                 style="@style/detail"
-                android:text="Breed:"/>
+                android:text="@string/breed"/>
             <TextView
                 style="@style/detail"
-                android:text="Interest"/>
+                android:text="@string/interest"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/linear"

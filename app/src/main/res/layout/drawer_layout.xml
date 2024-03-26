@@ -39,7 +39,7 @@
             android:layout_marginBottom="10dp"
             android:layout_toEndOf="@id/ivLogo"
             android:fontFamily="@font/poppins_semibold"
-            android:text="PetNaar"
+            android:text="@string/pet_insta"
             android:textColor="@color/white"
             android:textSize="18sp" />
 
@@ -65,46 +65,36 @@
         <TextView
             android:id="@+id/language"
             style="@style/menu"
-            android:text="English"
+            android:text="@string/language"
             android:drawableStart="@drawable/language"/>
         <TextView
             android:id="@+id/community"
             style="@style/menu"
-            android:text="Community"
+            android:text="@string/community"
             android:drawableStart="@drawable/community"/>
 
         <TextView
             android:id="@+id/places"
             style="@style/menu"
-            android:text="Pet-Friendly Places"
+            android:text="@string/pet_friendly_places"
             android:drawableStart="@drawable/places"/>
         <TextView
             android:id="@+id/events"
             style="@style/menu"
-            android:text="Events"
+            android:text="@string/events"
             android:drawableStart="@drawable/event"/>
-
 
         <TextView
             android:id="@+id/advice"
             style="@style/menu"
-            android:text="Advice"
+            android:text="@string/advice"
             android:drawableStart="@drawable/advice"/>
+        <TextView
+            android:id="@+id/clinics"
+            style="@style/menu"
+            android:text="@string/pet_clinics"
+            android:drawableStart="@drawable/ic_pet_clinic"/>
     </LinearLayout>
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnChange"
-        android:layout_width="wrap_content"
-        android:layout_height="22dp"
-        android:background="@drawable/bg_button_white"
-        android:layout_toEndOf="@id/linear"
-        android:layout_below="@id/view"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        android:textSize="8sp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Change"
-        android:textColor="@color/blue"
-        android:textAllCaps="false"/>
     <View
         android:id="@+id/view2"
         android:layout_marginTop="10dp"
@@ -125,25 +115,14 @@
         <TextView
             android:id="@+id/tvAbout"
             style="@style/menu"
-            android:text="About Us"
+            android:text="@string/about_us"
             android:drawableStart="@drawable/info"/>
-        <TextView
-            android:id="@+id/tvContact"
-            style="@style/menu"
-            android:text="Contact Us"
-            android:drawableStart="@drawable/phone_call"/>
 
         <TextView
             android:id="@+id/faq"
             style="@style/menu"
-            android:text="FAQ's"
+            android:text="@string/faq_s"
             android:drawableStart="@drawable/faq"/>
-        <TextView
-            android:id="@+id/follow"
-            style="@style/menu"
-            android:text="Follow Us"
-            android:drawableStart="@drawable/follow"/>
-
 
 
     </LinearLayout>
@@ -156,6 +135,6 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:text="SignOut" />
+        android:text="@string/signout" />
 
 </RelativeLayout>

@@ -1,33 +1,51 @@
 package com.example.newpetapp.models;
 
-public class ProfilePets {
-    int image;
+import java.io.Serializable;
+import java.util.List;
+
+public class ProfilePets implements Serializable {
+    String key;
+    String image;
     String name;
-    String details;
-    int image2;
+    String type;
+    String age;
+    String breed;
+    String interest;
+
+    public List<ReviewsModel> getReviewsModelsList() {
+        return reviewsModelsList;
+    }
+
+    List<ReviewsModel>reviewsModelsList;
 
 
-    public ProfilePets(int image, String name, String details, int image2) {
+    public ProfilePets() {
+    }
+
+
+    public ProfilePets(String image, String name, String type, String age, String breed, String interest,List<ReviewsModel>reviewsModelsList) {
         this.image = image;
         this.name = name;
-        this.details = details;
-        this.image2 = image2;
+        this.type = type;
+        this.age = age;
+        this.breed = breed;
+        this.interest = interest;
+        this.reviewsModelsList=reviewsModelsList;
     }
 
-
-    public int getImage2() {
-        return image2;
+    public String getKey() {
+        return key;
     }
 
-    public void setImage2(int image2) {
-        this.image2 = image2;
+    public void setKey(String key) {
+        this.key = key;
     }
 
-    public int getImage() {
+    public String getImage() {
         return image;
     }
 
-    public void setImage(int image) {
+    public void setImage(String image) {
         this.image = image;
     }
 
@@ -39,11 +57,40 @@ public class ProfilePets {
         this.name = name;
     }
 
-    public String getDetails() {
-        return details;
+    public String getType() {
+        return type;
     }
 
-    public void setDetails(String details) {
-        this.details = details;
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
+
+    public String getInterest() {
+        return interest;
+    }
+
+    public void setInterest(String interest) {
+        this.interest = interest;
+    }
+
+    public void setReviewsModelsList(List<ReviewsModel> reviewsModelsList) {
+        this.reviewsModelsList = reviewsModelsList;
     }
 }
+

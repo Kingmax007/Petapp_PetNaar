@@ -22,7 +22,7 @@
 
         <TextView
             style="@style/tvHeading"
-            android:text="Add Advice" />
+            android:text="@string/add_advice" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -39,7 +39,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
-            android:hint="Enter Title"/>
+            android:hint="@string/enter_title"/>
         <EditText
             android:id="@+id/edtDetail"
             style="@style/edtText3"
@@ -51,7 +51,7 @@
             android:layout_marginBottom="10dp"
             android:gravity="start"
             android:padding="10dp"
-            android:hint="Enter Details "/>
+            android:hint="@string/enter_details"/>
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSave"
             style="@style/Button"
@@ -60,6 +60,6 @@
             android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
-            android:text="Save" />
+            android:text="@string/save" />
     </RelativeLayout>
 </RelativeLayout>

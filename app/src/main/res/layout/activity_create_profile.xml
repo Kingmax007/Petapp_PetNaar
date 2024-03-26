@@ -25,7 +25,7 @@
 
         <TextView
             style="@style/tvHeading"
-            android:text="Create Your Profile"/>
+            android:text="@string/create_your_profile"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -35,7 +35,7 @@
         android:layout_below="@id/parent"
         >
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/ivProfile"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -55,7 +55,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
             android:drawableStart="@drawable/ic_user"
-            android:hint="Name"/>
+            android:hint="@string/name"/>
         <EditText
             android:id="@+id/edtEmail"
             style="@style/edtText2"
@@ -65,7 +65,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
             android:drawableStart="@drawable/email"
-            android:hint="Email"/>
+            android:hint="@string/email"/>
 
         <EditText
             android:id="@+id/edtPass"
@@ -76,7 +76,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
             android:drawableStart="@drawable/ic_lock"
-            android:hint="Password"/>
+            android:hint="@string/password"/>
         <EditText
             android:id="@+id/edtConfPass"
             style="@style/edtText2"
@@ -86,7 +86,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
             android:drawableStart="@drawable/ic_lock"
-            android:hint="Confirm Password"/>
+            android:hint="@string/confirm_password"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSave"

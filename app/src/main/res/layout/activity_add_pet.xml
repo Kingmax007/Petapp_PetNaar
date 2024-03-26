@@ -39,38 +39,48 @@
             android:elevation="10dp"
             android:padding="10dp"
             android:layout_centerHorizontal="true">
+
             <ImageView
                 android:id="@+id/ivImage"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_centerHorizontal="true"
-                android:src="@drawable/camera_flash"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pet Image "
-                android:textColor="@color/blue"
-                android:layout_below="@id/ivImage"
-                android:layout_centerHorizontal="true"
-                android:layout_margin="5dp"/>
+                android:layout_centerInParent="true"
+                android:src="@drawable/camera_flash" />
+
         </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivAddImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/pet_image"
+            android:textColor="@color/blue" />
 
         <EditText
             android:id="@+id/edtName"
             style="@style/edtText3"
-            android:layout_below="@id/ivAddImage"
+            android:layout_below="@id/tvText"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
-            android:hint="Enter Pet Name"/>
+            android:hint="@string/enter_pet_name"/>
 
-        <Spinner
+        <EditText
             android:id="@+id/edtType"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:background="@drawable/bg_spinner"
             android:layout_below="@id/edtName"
+            android:hint="@string/pet_type"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
@@ -85,7 +95,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
-            android:hint="Enter Age"/>
+            android:hint="@string/enter_age"/>
         <EditText
             android:id="@+id/edtBreed"
             style="@style/edtText3"
@@ -94,7 +104,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
-            android:hint="Enter Bread"/>
+            android:hint="@string/enter_bread"/>
 
         <EditText
             android:id="@+id/edtInterest"
@@ -104,7 +114,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
-            android:hint="Enter Interests"/>
+            android:hint="@string/enter_interests"/>
 
         <TextView
             android:id="@+id/choose"
@@ -120,7 +130,7 @@
             android:id="@+id/activity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Outdoor Activities"
+            android:text="@string/outdoor_activities"
             android:fontFamily="@font/poppins"
             android:textSize="12sp"
             android:textColor="@color/black"
@@ -129,7 +139,7 @@
             android:id="@+id/tips"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pet Care Tips"
+            android:text="@string/pet_care_tips"
             android:fontFamily="@font/poppins"
             android:textSize="12sp"
             android:textColor="@color/black"

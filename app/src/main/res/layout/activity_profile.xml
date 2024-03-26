@@ -31,7 +31,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/parent">
-        <ImageView
+        <TextView
+            android:id="@+id/tvLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/ic_logout"
+            android:paddingTop="20dp"
+            android:drawablePadding="5dp"
+            android:layout_alignParentLeft="true"/>
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_picture"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -40,15 +50,18 @@
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/girl" />
+            android:src="@drawable/ic_profile" />
 
         <ImageView
             android:id="@+id/ivEdit"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:src="@drawable/ic_pen"
             android:layout_alignParentEnd="true"
-            android:layout_margin="15dp" />
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/ic_pen" />
 
         <TextView
             android:id="@+id/tvName"
@@ -62,7 +75,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="5dp"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Ashish Chutake"
+            android:text=""
             android:textSize="16sp" />
 
         <TextView
@@ -73,7 +86,7 @@
             android:layout_centerHorizontal="true"
             android:fontFamily="@font/poppins"
             android:textColor="@color/black"
-            android:text="ashishuxuid@gmail.com"
+            android:text=""
             android:textSize="16sp" />
 
 
@@ -97,7 +110,7 @@
             android:paddingLeft="20dp"
             android:paddingTop="20dp"
             android:fontFamily="@font/poppins_semibold"
-            android:text="My Pets:"
+            android:text="@string/my_pets"
             android:textSize="18sp" />
         <ImageView
             android:id="@+id/ivAdd"

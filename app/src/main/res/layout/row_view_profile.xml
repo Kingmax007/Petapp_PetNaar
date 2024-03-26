@@ -13,30 +13,56 @@
         android:layout_width="100dp"
         android:layout_height="80dp"
         android:src="@drawable/iv_row_5"/>
-    <TextView
-        android:id="@+id/tvName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/ivImage"
-        android:fontFamily="@font/poppins"
-        android:text="Australian Shepherd"
-        android:layout_margin="10dp"
-        android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@id/ivImage"
+            android:fontFamily="@font/poppins"
+            android:text="Australian Shepherd"
+            android:textSize="14sp" />
 
 
-    <TextView
+    <LinearLayout
         android:id="@+id/tvDetail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvName"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_toEndOf="@id/ivImage"
-        android:fontFamily="@font/poppins_light"
-        android:text="Intelligent, Hard worki..."
-        android:textSize="12sp" />
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/ivImage">
+        <TextView
+            android:id="@+id/tvAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_light"/>
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_light"/>
+        <TextView
+            android:id="@+id/tvbreed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_light"/>
+        <TextView
+            android:id="@+id/tvInterest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_light"/>
+
+    </LinearLayout>
+
 
     <ImageView
         android:id="@+id/menu"

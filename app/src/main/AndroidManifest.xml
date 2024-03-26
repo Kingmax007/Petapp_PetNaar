@@ -13,6 +13,12 @@
         android:theme="@style/Theme.NewPetApp"
         tools:targetApi="31">
         <activity
+            android:name=".activities.EditPetsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EditProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.ActivityAddAdvice"
             android:exported="false" />
         <activity
@@ -65,7 +71,7 @@
             android:exported="false" />
         <activity
             android:name=".activities.ActivitySplash"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -80,7 +86,8 @@
             android:exported="false" />
         <activity
             android:name=".activities.ActivityAddEvent"
-            android:exported="true"/>
+            android:exported="true" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

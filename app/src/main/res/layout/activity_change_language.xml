@@ -25,7 +25,7 @@
 
         <TextView
             style="@style/tvHeading"
-            android:text="Change Language"/>
+            android:text="@string/change_language"/>
     </RelativeLayout>
 
     <RelativeLayout

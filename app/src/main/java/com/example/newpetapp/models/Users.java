@@ -1,15 +1,23 @@
 package com.example.newpetapp.models;
 
 public class Users {
-
-
+    String id;
     String url;
     String name;
+    public Users() {
 
-
-    public Users(String url, String name) {
+    }
+    public Users(String id, String url, String name) {
+        this.id = id;
         this.url = url;
         this.name = name;
+    }
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getUrl() {

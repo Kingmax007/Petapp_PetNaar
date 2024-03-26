@@ -24,12 +24,15 @@
         android:id="@+id/answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
         android:layout_below="@id/question"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:fontFamily="@font/poppins_medium"
-        android:textSize="13sp"
+        android:text="The pet app serves as a comprehensive platform designed to assist pet owners in various aspects of pet care, including finding pet-friendly places, accessing expert advice, connecting with the pet community, and organizing pet-related events."
         android:textColor="@color/black"
-        android:text="The pet app serves as a comprehensive platform designed to assist pet owners in various aspects of pet care, including finding pet-friendly places, accessing expert advice, connecting with the pet community, and organizing pet-related events."/>
+        android:textSize="13sp" />
 
 
 </RelativeLayout>

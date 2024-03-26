@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.ActivityFAQs" android:background="@color/white"
-
+    tools:context=".activities.ActivityFAQs"
+    android:background="@color/white"
     >
-
     <RelativeLayout
         android:id="@+id/parent"
         android:padding="10dp"
@@ -20,7 +19,7 @@
             android:layout_margin="10dp"
             android:src="@drawable/ic_arrow"/>
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/ivProfile"
             android:layout_width="40dp"
             android:layout_height="40dp"
@@ -41,19 +40,22 @@
             android:textSize="30sp"
             android:layout_centerHorizontal="true"
             android:textColor="@color/blue"
-            android:text="FAQ's"/>
+            android:text="@string/faq_s"/>
 
     </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/parent2">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_below="@id/parent2">
+        >
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/light"
-            android:padding="20dp">
+            android:background="@color/light">
 
             <TextView
                 android:id="@+id/question"
@@ -65,34 +67,48 @@
                 android:layout_marginBottom="10dp"
                 android:layout_toLeftOf="@id/dropDown"
                 android:fontFamily="@font/poppins_semibold"
-                android:text=" What is the purpose of the pet app?"
+                android:text="@string/what_is_the_purpose_of_the_pet_app"
                 android:textColor="@color/blue"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
+
             <ImageView
                 android:id="@+id/dropDown"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:src="@drawable/arrow_drop_down"
                 android:layout_alignParentEnd="true"
-                android:layout_margin="10dp"/>
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/arrow_drop_down" />
+
             <TextView
                 android:id="@+id/answer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:layout_below="@id/question"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:visibility="gone"
                 android:fontFamily="@font/poppins_medium"
-                android:textSize="13sp"
+                android:text="@string/the_pet_app_serves_as_a_comprehensive_platform_designed_to_assist_pet_owners_in_various_aspects_of_pet_care_including_finding_pet_friendly_places_accessing_expert_advice_connecting_with_the_pet_community_and_organizing_pet_related_events"
                 android:textColor="@color/black"
-                android:text="The pet app serves as a comprehensive platform designed to assist pet owners in various aspects of pet care, including finding pet-friendly places, accessing expert advice, connecting with the pet community, and organizing pet-related events."/>
+                android:textSize="13sp" />
 
         </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:id="@+id/view2"
+            android:layout_below="@id/question3"
+            android:layout_marginTop="10dp"/>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp">
-
+            android:background="@color/light">
             <TextView
                 android:id="@+id/question2"
                 android:layout_width="320dp"
@@ -103,9 +119,9 @@
                 android:layout_marginBottom="10dp"
                 android:layout_toLeftOf="@id/dropDown2"
                 android:fontFamily="@font/poppins_semibold"
-                android:text=" What is the purpose of the pet app?"
+                android:text="@string/how_do_i_create_a_profile_on_the_pet_app"
                 android:textColor="@color/blue"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
             <ImageView
                 android:id="@+id/dropDown2"
                 android:layout_width="20dp"
@@ -113,34 +129,47 @@
                 android:src="@drawable/arrow_drop_down"
                 android:layout_alignParentEnd="true"
                 android:layout_margin="10dp"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/grey"
-                android:id="@+id/view"
+
+            <TextView
+                android:id="@+id/answer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/question2"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginStart="10dp"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/you_can_create_profile_by_joining_at_the_start_by_pressing_do_you_have_account_or_by_joining_community"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
 
         </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:id="@+id/view3"
+            android:layout_below="@id/question4"
+            android:layout_marginTop="10dp"/>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp">
-
+            android:background="@color/light">
             <TextView
                 android:id="@+id/question3"
-                android:layout_width="wrap_content"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                android:layout_toLeftOf="@id/dropDown3"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
+                android:layout_toLeftOf="@id/dropDown3"
                 android:fontFamily="@font/poppins_semibold"
-                android:text=" What is the purpose of the pet app?"
+                android:text="@string/can_i_add_multiple_pets_to_my_profile"
                 android:textColor="@color/blue"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
             <ImageView
                 android:id="@+id/dropDown3"
                 android:layout_width="20dp"
@@ -148,34 +177,46 @@
                 android:src="@drawable/arrow_drop_down"
                 android:layout_alignParentEnd="true"
                 android:layout_margin="10dp"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/grey"
-                android:id="@+id/view2"
+
+            <TextView
+                android:id="@+id/answer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/question3"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginStart="10dp"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/yes_you_can_add_multiple_pets_to_your_profile"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
 
         </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:id="@+id/view6"
+            android:layout_marginTop="10dp"/>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp">
-
+            android:background="@color/light">
             <TextView
                 android:id="@+id/question4"
-                android:layout_width="wrap_content"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
-                android:layout_toLeftOf="@id/dropDown4"
                 android:layout_marginBottom="10dp"
+                android:layout_toLeftOf="@id/dropDown4"
                 android:fontFamily="@font/poppins_semibold"
-                android:text=" What is the purpose of the pet app?"
+                android:text="@string/how_do_i_find_pet_friendly_places_using_the_app"
                 android:textColor="@color/blue"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
             <ImageView
                 android:id="@+id/dropDown4"
                 android:layout_width="20dp"
@@ -183,23 +224,37 @@
                 android:src="@drawable/arrow_drop_down"
                 android:layout_alignParentEnd="true"
                 android:layout_margin="10dp"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/grey"
-                android:id="@+id/view3"
+
+            <TextView
+                android:id="@+id/answer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/question4"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginStart="10dp"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/you_can_find_it_by_opening_side_menu_bar_and_select_pet_freindly_plces_option"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
 
         </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:id="@+id/view7"
+            android:layout_below="@id/question5"
+            android:layout_marginTop="10dp"/>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp">
+            android:background="@color/light">
             <TextView
                 android:id="@+id/question5"
-                android:layout_width="wrap_content"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
@@ -207,9 +262,9 @@
                 android:layout_marginBottom="10dp"
                 android:layout_toLeftOf="@id/dropDown5"
                 android:fontFamily="@font/poppins_semibold"
-                android:text=" What is the purpose of the pet app?"
+                android:text="@string/is_there_a_community_feature_on_the_app"
                 android:textColor="@color/blue"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
             <ImageView
                 android:id="@+id/dropDown5"
                 android:layout_width="20dp"
@@ -217,16 +272,25 @@
                 android:src="@drawable/arrow_drop_down"
                 android:layout_alignParentEnd="true"
                 android:layout_margin="10dp"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/grey"
-                android:id="@+id/view4"
+
+            <TextView
+                android:id="@+id/answer5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/question5"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginStart="10dp"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Yes there is also community feature in the app."
+                android:textColor="@color/black"
+                android:textSize="13sp" />
 
         </RelativeLayout>
 
 
     </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

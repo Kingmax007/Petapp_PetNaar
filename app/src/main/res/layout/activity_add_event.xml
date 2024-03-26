@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.ActivityAddEvent" android:background="@color/white"
+    tools:context=".activities.ActivityAddEvent"
+    android:background="@color/white"
     android:padding="20dp"
     >
 
@@ -21,7 +22,7 @@
 
         <TextView
             style="@style/tvHeading"
-            android:text="Add Event" />
+            android:text="@string/add_event" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -42,8 +43,8 @@
 
             <ImageView
                 android:id="@+id/ivCamera"
-                android:layout_width="40dp"
-                android:layout_height="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:src="@drawable/ic_photo_camera" />
 
@@ -57,7 +58,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
-            android:hint="Enter Event Title"/>
+            android:hint="@string/enter_event_title"/>
 
         <Spinner
             android:id="@+id/edtDate"
@@ -77,7 +78,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
-            android:hint="Enter Event Location "/>
+            android:hint="@string/enter_event_location"/>
 
         <EditText
             android:id="@+id/edtDetail"
@@ -90,7 +91,7 @@
             android:layout_marginBottom="10dp"
             android:gravity="start"
             android:padding="10dp"
-            android:hint="Enter More Details "/>
+            android:hint="@string/enter_more_details"/>
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSave"
             style="@style/Button"
